@@ -1,5 +1,10 @@
 # securemodelines
 
+This is a fork of [securemodelines](https://github.com/ciaranm/securemodelines) 
+with a 
+[patch](https://github.com/chriscroome/securemodelines/commit/c7525f4a1b9045961b6fde5f7868f0e900b1cf3a) 
+to support `syntax`.
+
 ## description
 
 secure, user-configurable modeline support for {neo,}vim
