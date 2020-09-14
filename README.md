@@ -1,9 +1,6 @@
 # securemodelines
 
-This is a fork of [securemodelines](https://github.com/ciaranm/securemodelines) 
-with a 
-[patch](https://github.com/chriscroome/securemodelines/commit/c7525f4a1b9045961b6fde5f7868f0e900b1cf3a) 
-to support `syntax`.
+This is a fork of [securemodelines](https://github.com/chriscroome/securemodelines). Original README file written by [@xero](https://github.com/xero).
 
 ## description
 
@@ -16,24 +13,24 @@ restricted modeline parser that permits only user-specified options to be set.
 the `g:secure_modelines_allowed_items` array contains allowable options. by
 default it is set as follows:
 
-	let g:secure_modelines_allowed_items = [
-		\ "textwidth",   "tw",
-		\ "softtabstop", "sts",
-		\ "tabstop",     "ts",
-		\ "shiftwidth",  "sw",
-		\ "expandtab",   "et",   "noexpandtab", "noet",
-		\ "filetype",    "ft",
-		\ "foldmethod",  "fdm",
-		\ "readonly",    "ro",   "noreadonly", "noro",
-		\ "rightleft",   "rl",   "norightleft", "norl",
-		\ "cindent",     "cin",  "nocindent", "nocin",
-		\ "smartindent", "si",   "nosmartindent", "nosi",
-		\ "autoindent",  "ai",   "noautoindent", "noai",
-		\ "spell", "nospell",
-		\ "spelllang",
-		\ "wrap", "nowrap",
-		\ "syntax"
-	\ ]
+        let g:secure_modelines_allowed_items = [
+                \ "textwidth",   "tw",
+                \ "softtabstop", "sts",
+                \ "tabstop",     "ts",
+                \ "shiftwidth",  "sw",
+                \ "expandtab",   "et",   "noexpandtab", "noet",
+                \ "filetype",    "ft",
+                \ "foldmethod",  "fdm",
+                \ "readonly",    "ro",   "noreadonly", "noro",
+                \ "rightleft",   "rl",   "norightleft", "norl",
+                \ "cindent",     "cin",  "nocindent", "nocin",
+                \ "smartindent", "si",   "nosmartindent", "nosi",
+                \ "autoindent",  "ai",   "noautoindent", "noai",
+                \ "spell", "nospell",
+                \ "spelllang",
+                \ "wrap", "nowrap",
+                \ "syntax"
+        \ ]
 
 the `g:secure_modelines_verbose` option, if set to something true, will make
 the script warn when a modeline attempts to set any other option.
@@ -48,4 +45,4 @@ if `g:secure_modelines_leave_modeline` is defined, the script will not clobber
 
 install example using [plug](https://github.com/junegunn/vim-plug):
 
-	Plug 'xero/securemodelines'
+        Plug 'alexghergh/securemodelines'
