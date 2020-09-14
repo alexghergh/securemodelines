@@ -126,7 +126,7 @@ fun! <SID>DoModelines() abort
     if line("$") > g:secure_modelines_modelines
         let l:lines={ }
         call map(filter(getline(1, g:secure_modelines_modelines) +
-                    \ getline(line("$") - g:secure_modelines_modelines, "$"),
+                    \ getline(line("$") - g:secure_modelines_modelines + 1, "$"),
                     \ 'v:val =~ ":"'), 'extend(l:lines, { v:val : 0 } )')
         for l:line in keys(l:lines)
             call <SID>DoModeline(l:line)
